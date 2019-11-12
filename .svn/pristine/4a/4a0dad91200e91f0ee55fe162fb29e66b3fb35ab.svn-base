@@ -1,0 +1,22 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="DeleteTaskU8._default1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Menu ID="Menu1" runat="server">
+                <Items>
+                    <asp:MenuItem Text="任务删除" Value="任务删除"  NavigateUrl="~/DeletTask.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="解除单据锁定" Value="解除单据锁定"></asp:MenuItem>
+                </Items>
+            </asp:Menu>
+        </div>
+    </form>
+</body>
+</html>

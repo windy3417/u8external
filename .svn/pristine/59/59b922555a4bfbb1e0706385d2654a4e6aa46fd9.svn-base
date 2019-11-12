@@ -20,12 +20,8 @@
     </compilers>
   </system.codedom>
 <connectionStrings>
-  <add name="myConcetion" connectionString="server=192.168.10.66;database=ufdata_017_2017;&#xD;&#xA;  uid=sa;pwd=000000" />
+  <add name="myConcetion" connectionString="server=192.168.10.66;database=ufsystem;&#xD;&#xA;         uid=sa;pwd=000000" />
   <add name="UFSystemConnectionString" connectionString="Data Source=192.168.10.66;Initial Catalog=UFSystem;User ID=sa;Password=000000"
-    providerName="System.Data.SqlClient" />
-  <add name="UFDataConnectionString" connectionString="Data Source=192.168.10.66;Initial Catalog=ufdata_017_2017;User ID=sa;Password=000000"
-    providerName="System.Data.SqlClient" />
-  <add name="UFManageConnectionString" connectionString="Data Source=192.168.10.66;Initial Catalog=manage;User ID=sa;Password=000000"
     providerName="System.Data.SqlClient" />
 </connectionStrings>
 </configuration>
