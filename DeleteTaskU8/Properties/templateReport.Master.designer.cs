@@ -51,6 +51,15 @@ namespace DeleteTaskU8.Properties
         protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolderForTools;
 
         /// <summary>
+        /// filter 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder filter;
+
+        /// <summary>
         /// ContentPlaceHolderForContent 控件。
         /// </summary>
         /// <remarks>

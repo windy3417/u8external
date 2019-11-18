@@ -1,0 +1,28 @@
+﻿body {
+    /*background-color:lightblue;*/
+}
+.treeMenu {
+    width: 20%;
+    /*height:90%;*/
+    float: left;
+    background-color: #DCDCDC;
+}
+
+.report {
+    margin-left: 20.5%;
+    background-color:lightskyblue;
+}
+
+.contentTools {
+    height: 100px;
+}
+
+.content {
+    margin-top: 10px;
+    height: 70%;
+    background-color: lightblue;
+}
+
+.foot {
+    height:50px;
+}

@@ -5,16 +5,11 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace DeleteTaskU8.Properties
+namespace DeleteTaskU8
 {
-    public partial class templateReport : System.Web.UI.MasterPage
+    public partial class UnlockCredit : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void TreeView1_SelectedNodeChanged(object sender, EventArgs e)
         {
 
         }

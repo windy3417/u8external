@@ -67,18 +67,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\cssMaster.css" />
+    <Content Include="css\cssReport.css" />
     <Content Include="default.aspx" />
     <Content Include="DeletTask.aspx" />
     <Content Include="POContract.aspx" />
     <Content Include="resources\logo.jpg" />
     <Content Include="SAContract.aspx" />
+    <Content Include="UnlockCredit.aspx" />
     <Content Include="unlockVouchers.aspx" />
+    <Content Include="view\filterForm\filterVendorArchive.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\conectionString.cs" />
+    <Compile Include="DAL\ReferenceForm\vendorArchive.cs" />
     <Compile Include="DAL\Reports\InspectItemService.cs" />
     <Compile Include="DAL\Reports\MaterialsOutSheetService.cs" />
     <Compile Include="DAL\Reports\ProductionOrdersService.cs" />
@@ -127,12 +132,26 @@
     <Compile Include="SAContract.aspx.designer.cs">
       <DependentUpon>SAContract.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UnlockCredit.aspx.cs">
+      <DependentUpon>UnlockCredit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UnlockCredit.aspx.designer.cs">
+      <DependentUpon>UnlockCredit.aspx</DependentUpon>
+    </Compile>
     <Compile Include="unlockVouchers.aspx.cs">
       <DependentUpon>unlockVouchers.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="unlockVouchers.aspx.designer.cs">
       <DependentUpon>unlockVouchers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\filterForm\filterVendorArchive.aspx.cs">
+      <DependentUpon>filterVendorArchive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\filterForm\filterVendorArchive.aspx.designer.cs">
+      <DependentUpon>filterVendorArchive.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

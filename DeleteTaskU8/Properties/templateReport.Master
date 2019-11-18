@@ -4,77 +4,61 @@
 
 <html>
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <style  type="text/css">
-        .treeMenu{
-            width:20%;
-            /*height:90%;*/
-            float:left;
-            background-color: #DCDCDC;
+    <link href="../css/cssMaster.css" rel="stylesheet" />
 
-        }
-               .report{
-            margin-left:20.5%;
-            /*background-color:lightskyblue;*/
-           
-        }
-        .contentTools{
-            height:100px;
-        }
-        .content{
-            margin-top:10px;
-        }
-        .foot{
-            
-        }
-    </style> 
 </head>
 <body>
     <form id="form1" class="formTree" runat="server">
 
-        <div class ="divHead">
+        <div class="divHead">
             <img alt="" src="../resources/logo.jpg" style="width: 160px; height: 48px;" />
-        
-           
-        
-    <hr />
-    </div> 
 
-        <div class="treeMenu"><asp:TreeView ID="TreeView1" runat="server">
-            <Nodes>
-                <asp:TreeNode Text="任务删除" Value="deleteTask">
-                    <asp:TreeNode Text="删除任务" Value="deltetDetailedTask" NavigateUrl="~/DeletTask.aspx"></asp:TreeNode>
-                    <asp:TreeNode Text="解除单据锁定" Value="UnlockVoucher" NavigateUrl="~/unlockVouchers.aspx"></asp:TreeNode>
-                    <asp:TreeNode Text="解除科目锁定" Value="UnlockCode"></asp:TreeNode>
-                    <asp:TreeNode Text="解除凭证锁定" Value="UnlockCredit"></asp:TreeNode>
-                </asp:TreeNode>
-                <asp:TreeNode Text="合同清单" Value="contractList">
-                    <asp:TreeNode NavigateUrl="~/POContract.aspx" Text="采购合同清单" Value="POList"></asp:TreeNode>
-                    <asp:TreeNode NavigateUrl="~/SAContract.aspx" Text="销售合同清单" Value="SAContract"></asp:TreeNode>
-                </asp:TreeNode>
-            </Nodes>
-        </asp:TreeView></div>
-         
+            <hr />
+        </div>
+
+        <div class="treeMenu">
+            <asp:TreeView ID="TreeView1" runat="server" OnSelectedNodeChanged="TreeView1_SelectedNodeChanged">
+                <Nodes>
+                    <asp:TreeNode Text="任务删除" Value="deleteTask">
+                        <asp:TreeNode Text="删除任务" Value="deltetDetailedTask" NavigateUrl="~/DeletTask.aspx"></asp:TreeNode>
+                        <asp:TreeNode Text="解除单据锁定" Value="UnlockVoucher" NavigateUrl="~/unlockVouchers.aspx"></asp:TreeNode>
+                        <asp:TreeNode Text="解除科目锁定" Value="UnlockCode"></asp:TreeNode>
+                        <asp:TreeNode Text="解除凭证锁定" Value="UnlockCredit"></asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="合同清单" Value="contractList">
+                        <asp:TreeNode NavigateUrl="~/POContract.aspx" Text="采购合同清单" Value="POList"></asp:TreeNode>
+                        <asp:TreeNode NavigateUrl="~/SAContract.aspx" Text="销售合同清单" Value="SAContract"></asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="采购报表" Value="purchaseReport"></asp:TreeNode>
+                </Nodes>
+            </asp:TreeView>
+        </div>
+
         <div class="report" style="clip: rect(auto, auto, 100px, auto)">
-             <div class="comtentTools">
-             <asp:ContentPlaceHolder ID="ContentPlaceHolderForTools" runat="server">
-            </asp:ContentPlaceHolder>
+            <div class="comtentTools">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolderForTools" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <div class="filter">
+                <asp:ContentPlaceHolder ID="filter" runat="server"></asp:ContentPlaceHolder>
+            </div>
+
+            <div class="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolderForContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
         </div>
-       
-        <div class="content">
-            <asp:ContentPlaceHolder ID="ContentPlaceHolderForContent" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
-        </div>
-       
-        
+
+
     </form>
 
     <div class="foot" style="clip: rect(auto, auto, 3%, auto); height: 10%;"></div>
 
 </body>
-    
+
 </html>
